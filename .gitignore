@@ -1,0 +1,29 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Testing & Caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local SQLite database & user-uploaded personal files (recreated automatically on startup)
+data/structura.db
+data/user_datasets/
+
+# Secrets & Environment
+.env
+.env.*
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+bottom_left.png

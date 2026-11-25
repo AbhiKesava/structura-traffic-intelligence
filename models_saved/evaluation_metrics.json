@@ -1,0 +1,671 @@
+{
+  "Persistence": {
+    "15min": {
+      "MAE": 2.95,
+      "RMSE": 3.767,
+      "MAPE": 5.84,
+      "Accuracy": 90.31,
+      "Macro_Precision": 59.27,
+      "Macro_Recall": 59.27,
+      "Macro_F1": 59.27,
+      "Confusion_Matrix": [
+        [
+          118686,
+          3973,
+          7,
+          0
+        ],
+        [
+          3972,
+          18980,
+          3874,
+          7
+        ],
+        [
+          7,
+          3880,
+          8893,
+          1
+        ],
+        [
+          0,
+          1,
+          7,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "30min": {
+      "MAE": 4.077,
+      "RMSE": 5.299,
+      "MAPE": 8.4,
+      "Accuracy": 83.03,
+      "Macro_Precision": 48.33,
+      "Macro_Recall": 48.33,
+      "Macro_F1": 48.33,
+      "Confusion_Matrix": [
+        [
+          115181,
+          7446,
+          39,
+          0
+        ],
+        [
+          7454,
+          13102,
+          6270,
+          7
+        ],
+        [
+          30,
+          6282,
+          6468,
+          1
+        ],
+        [
+          0,
+          4,
+          4,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "60min": {
+      "MAE": 6.436,
+      "RMSE": 8.765,
+      "MAPE": 13.75,
+      "Accuracy": 71.46,
+      "Macro_Precision": 31.99,
+      "Macro_Recall": 31.99,
+      "Macro_F1": 31.99,
+      "Confusion_Matrix": [
+        [
+          107763,
+          12653,
+          2253,
+          7
+        ],
+        [
+          12713,
+          5898,
+          8211,
+          1
+        ],
+        [
+          2189,
+          8276,
+          2316,
+          0
+        ],
+        [
+          0,
+          7,
+          1,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "Overall": {
+      "MAE": 4.488,
+      "RMSE": 6.301,
+      "MAPE": 9.33,
+      "Accuracy": 81.6,
+      "Macro_Precision": 46.53,
+      "Macro_Recall": 46.53,
+      "Macro_F1": 46.53,
+      "Confusion_Matrix": [
+        [
+          341630,
+          24072,
+          2299,
+          7
+        ],
+        [
+          24139,
+          37980,
+          18355,
+          15
+        ],
+        [
+          2226,
+          18438,
+          17677,
+          2
+        ],
+        [
+          0,
+          12,
+          12,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    }
+  },
+  "Historical_Average": {
+    "15min": {
+      "MAE": 2.377,
+      "RMSE": 3.073,
+      "MAPE": 4.52,
+      "Accuracy": 94.16,
+      "Macro_Precision": 65.15,
+      "Macro_Recall": 65.19,
+      "Macro_F1": 65.17,
+      "Confusion_Matrix": [
+        [
+          120434,
+          2232,
+          0,
+          0
+        ],
+        [
+          2156,
+          22133,
+          2544,
+          0
+        ],
+        [
+          4,
+          2535,
+          10239,
+          3
+        ],
+        [
+          0,
+          7,
+          1,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "30min": {
+      "MAE": 2.377,
+      "RMSE": 3.073,
+      "MAPE": 4.52,
+      "Accuracy": 94.16,
+      "Macro_Precision": 65.15,
+      "Macro_Recall": 65.19,
+      "Macro_F1": 65.17,
+      "Confusion_Matrix": [
+        [
+          120434,
+          2232,
+          0,
+          0
+        ],
+        [
+          2156,
+          22133,
+          2544,
+          0
+        ],
+        [
+          4,
+          2535,
+          10239,
+          3
+        ],
+        [
+          0,
+          7,
+          1,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "60min": {
+      "MAE": 2.376,
+      "RMSE": 3.072,
+      "MAPE": 4.52,
+      "Accuracy": 94.17,
+      "Macro_Precision": 65.16,
+      "Macro_Recall": 65.2,
+      "Macro_F1": 65.18,
+      "Confusion_Matrix": [
+        [
+          120455,
+          2221,
+          0,
+          0
+        ],
+        [
+          2146,
+          22133,
+          2544,
+          0
+        ],
+        [
+          4,
+          2535,
+          10239,
+          3
+        ],
+        [
+          0,
+          7,
+          1,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "Overall": {
+      "MAE": 2.377,
+      "RMSE": 3.073,
+      "MAPE": 4.52,
+      "Accuracy": 94.16,
+      "Macro_Precision": 65.15,
+      "Macro_Recall": 65.2,
+      "Macro_F1": 65.17,
+      "Confusion_Matrix": [
+        [
+          361323,
+          6685,
+          0,
+          0
+        ],
+        [
+          6458,
+          66399,
+          7632,
+          0
+        ],
+        [
+          12,
+          7605,
+          30717,
+          9
+        ],
+        [
+          0,
+          21,
+          3,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    }
+  },
+  "XGBoost": {
+    "15min": {
+      "MAE": 1.785,
+      "RMSE": 2.29,
+      "MAPE": 3.43,
+      "Accuracy": 95.29,
+      "Macro_Precision": 66.83,
+      "Macro_Recall": 66.64,
+      "Macro_F1": 66.73,
+      "Confusion_Matrix": [
+        [
+          21673,
+          316,
+          0,
+          0
+        ],
+        [
+          294,
+          4221,
+          351,
+          0
+        ],
+        [
+          0,
+          403,
+          1748,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "30min": {
+      "MAE": 1.8,
+      "RMSE": 2.311,
+      "MAPE": 3.47,
+      "Accuracy": 95.07,
+      "Macro_Precision": 66.21,
+      "Macro_Recall": 66.55,
+      "Macro_F1": 66.37,
+      "Confusion_Matrix": [
+        [
+          21660,
+          329,
+          0,
+          0
+        ],
+        [
+          300,
+          4144,
+          422,
+          0
+        ],
+        [
+          0,
+          376,
+          1775,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "60min": {
+      "MAE": 1.82,
+      "RMSE": 2.344,
+      "MAPE": 3.53,
+      "Accuracy": 94.87,
+      "Macro_Precision": 65.89,
+      "Macro_Recall": 65.59,
+      "Macro_F1": 65.73,
+      "Confusion_Matrix": [
+        [
+          21688,
+          305,
+          0,
+          0
+        ],
+        [
+          313,
+          4145,
+          404,
+          0
+        ],
+        [
+          1,
+          462,
+          1688,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "Overall": {
+      "MAE": 1.802,
+      "RMSE": 2.315,
+      "MAPE": 3.47,
+      "Accuracy": 95.08,
+      "Macro_Precision": 66.31,
+      "Macro_Recall": 66.26,
+      "Macro_F1": 66.28,
+      "Confusion_Matrix": [
+        [
+          65021,
+          950,
+          0,
+          0
+        ],
+        [
+          907,
+          12510,
+          1177,
+          0
+        ],
+        [
+          1,
+          1241,
+          5211,
+          0
+        ],
+        [
+          0,
+          1,
+          5,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    }
+  },
+  "PyTorch_STGCN": {
+    "15min": {
+      "MAE": 1.952,
+      "RMSE": 2.535,
+      "MAPE": 3.79,
+      "Accuracy": 94.26,
+      "Macro_Precision": 64.67,
+      "Macro_Recall": 66.13,
+      "Macro_F1": 65.09,
+      "Confusion_Matrix": [
+        [
+          121058,
+          1607,
+          1,
+          0
+        ],
+        [
+          2128,
+          20470,
+          4235,
+          0
+        ],
+        [
+          4,
+          1332,
+          11445,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "30min": {
+      "MAE": 2.168,
+      "RMSE": 2.857,
+      "MAPE": 4.26,
+      "Accuracy": 93.57,
+      "Macro_Precision": 63.36,
+      "Macro_Recall": 64.59,
+      "Macro_F1": 63.79,
+      "Confusion_Matrix": [
+        [
+          120783,
+          1882,
+          1,
+          0
+        ],
+        [
+          2202,
+          20311,
+          4320,
+          0
+        ],
+        [
+          6,
+          2012,
+          10763,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "60min": {
+      "MAE": 2.943,
+      "RMSE": 4.058,
+      "MAPE": 6.04,
+      "Accuracy": 89.0,
+      "Macro_Precision": 57.0,
+      "Macro_Recall": 53.64,
+      "Macro_F1": 55.1,
+      "Confusion_Matrix": [
+        [
+          120408,
+          2255,
+          13,
+          0
+        ],
+        [
+          5888,
+          17467,
+          3468,
+          0
+        ],
+        [
+          19,
+          6205,
+          6557,
+          0
+        ],
+        [
+          0,
+          7,
+          1,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    },
+    "Overall": {
+      "MAE": 2.355,
+      "RMSE": 3.218,
+      "MAPE": 4.7,
+      "Accuracy": 92.28,
+      "Macro_Precision": 61.73,
+      "Macro_Recall": 61.46,
+      "Macro_F1": 61.53,
+      "Confusion_Matrix": [
+        [
+          362249,
+          5744,
+          15,
+          0
+        ],
+        [
+          10218,
+          58248,
+          12023,
+          0
+        ],
+        [
+          29,
+          9549,
+          28765,
+          0
+        ],
+        [
+          0,
+          7,
+          17,
+          0
+        ]
+      ],
+      "Class_Labels": [
+        "Free",
+        "Moderate",
+        "Heavy",
+        "Severe"
+      ]
+    }
+  },
+  "scaler": {
+    "mean": 57.33283400084909,
+    "std": 8.487433538740303
+  },
+  "trained_at": "2026-10-13 14:35:56"
+}

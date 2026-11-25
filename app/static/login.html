@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in to Structura — Traffic Intelligence</title>
+  <meta name="description"
+    content="Structura Traffic Intelligence: Clarity for every mile ahead. Forecast congestion, compare routes, and optimize your travel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css?v=20261108_p4_exact">
+</head>
+
+<body class="structura-theme login-page-body">
+
+  <main class="structura-login-wrap" role="main">
+    <div class="structura-login-card">
+
+      <!-- =====================================================================
+           LEFT PANEL: ATMOSPHERIC LOS ANGELES FREEWAY VIADUCT ILLUSTRATION
+           ===================================================================== -->
+      <section class="login-hero-artwork-card" aria-label="Structura freeway artwork">
+        <!-- SVG Graphic: Modern highway viaduct curving towards mountain ridges -->
+        <svg class="artwork-bg-svg" viewBox="0 0 460 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#dce6d5" />
+              <stop offset="60%" stop-color="#b4c6ab" />
+              <stop offset="100%" stop-color="#4a5e4b" />
+            </linearGradient>
+            <linearGradient id="hillGrad1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#5a6f5b" />
+              <stop offset="100%" stop-color="#354536" />
+            </linearGradient>
+            <linearGradient id="hillGrad2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#3d503f" />
+              <stop offset="100%" stop-color="#1f2c21" />
+            </linearGradient>
+            <linearGradient id="roadGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#242c26" />
+              <stop offset="100%" stop-color="#121714" />
+            </linearGradient>
+          </defs>
+
+          <!-- Sky / Atmospheric Background -->
+          <rect width="100%" height="100%" fill="url(#skyGrad)" />
+
+          <!-- Distant Geometric Mountain Ridges -->
+          <polygon points="-40,320 80,180 200,320" fill="#718672" opacity="0.6" />
+          <polygon points="120,320 250,160 380,320" fill="#627763" opacity="0.7" />
+          <polygon points="260,320 370,190 480,320" fill="#506451" opacity="0.6" />
+
+          <!-- Midground Mountains -->
+          <polygon points="-20,380 140,240 310,380" fill="url(#hillGrad1)" />
+          <polygon points="180,410 330,260 480,410" fill="url(#hillGrad1)" opacity="0.9" />
+
+          <!-- City Skyline Silhouettes in Morning Haze -->
+          <rect x="40" y="320" width="16" height="50" fill="#2d3d30" opacity="0.5" />
+          <rect x="65" y="300" width="22" height="70" fill="#2d3d30" opacity="0.5" />
+          <rect x="95" y="330" width="18" height="40" fill="#2d3d30" opacity="0.5" />
+          <rect x="120" y="315" width="26" height="55" fill="#2d3d30" opacity="0.5" />
+          <rect x="155" y="295" width="20" height="75" fill="#2d3d30" opacity="0.5" />
+          <rect x="185" y="325" width="24" height="45" fill="#2d3d30" opacity="0.5" />
+
+          <!-- Foreground Dark Ridge -->
+          <path d="M -40 440 Q 180 370 480 430 L 480 620 L -40 620 Z" fill="url(#hillGrad2)" />
+
+          <!-- Elevated Highway Viaduct Structure -->
+          <!-- Vertical Concrete Support Columns -->
+          <line x1="120" y1="460" x2="120" y2="620" stroke="#121714" stroke-width="9" />
+          <line x1="200" y1="420" x2="200" y2="620" stroke="#121714" stroke-width="9" />
+          <line x1="280" y1="390" x2="280" y2="620" stroke="#121714" stroke-width="9" />
+          <line x1="360" y1="370" x2="360" y2="620" stroke="#121714" stroke-width="8" />
+
+          <!-- Sweeping Highway Roadbed Curve -->
+          <path d="M -20 620 C 100 540, 220 440, 480 340" stroke="#0a0d0b" stroke-width="36" fill="none"
+            stroke-linecap="round" />
+          <path d="M -20 620 C 100 540, 220 440, 480 340" stroke="#1e2721" stroke-width="32" fill="none"
+            stroke-linecap="round" />
+          <path d="M -20 620 C 100 540, 220 440, 480 340" stroke="#2c3930" stroke-width="26" fill="none"
+            stroke-linecap="round" />
+
+          <!-- Highway Guardrail Barrier Highlight -->
+          <path d="M -20 605 C 100 525, 220 425, 480 325" stroke="#b8cca6" stroke-width="2" fill="none" opacity="0.8" />
+          <path d="M -20 635 C 100 555, 220 455, 480 355" stroke="#526855" stroke-width="2.5" fill="none" />
+
+          <!-- Dashed Traffic Flow Lines on Highway -->
+          <path d="M -10 618 C 110 538, 230 438, 470 340" stroke="#e8985e" stroke-width="2.5" stroke-dasharray="14 18"
+            fill="none" />
+          <path d="M 0 624 C 115 544, 235 444, 475 346" stroke="#ffffff" stroke-width="2" stroke-dasharray="10 16"
+            fill="none" opacity="0.6" />
+        </svg>
+
+        <!-- Brand mark top left inside artwork -->
+        <div class="artwork-top-brand">
+          <div class="structura-logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <rect width="24" height="24" rx="6" fill="#141b16" />
+              <path d="M 6 18 L 12 5 L 18 18 M 8.5 13.5 L 15.5 13.5" stroke="#b8cca6" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="structura-brand-titles">
+            <span class="structura-title-main" style="color: #0e140f;">STRUCTURA</span>
+            <span class="structura-title-sub" style="color: #2b392d;">TRAFFIC INTELLIGENCE</span>
+          </div>
+        </div>
+
+        <!-- Hero messaging at bottom of artwork -->
+        <div class="artwork-bottom-overlay">
+          <span class="artwork-eyebrow">SEE THE FLOW BEFORE YOU GO</span>
+          <h1 class="artwork-headline">Clarity for every<br>mile ahead.</h1>
+          <p class="artwork-lead">Forecast congestion. Compare routes.<br>Choose a better time to travel.</p>
+          <div class="artwork-forecast-tag">
+            <span class="green-indicator-dot"></span>
+            <span>FORECASTS &middot; 15 / 30 / 60 MIN</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================================
+           RIGHT PANEL: DARK SIGN-IN FORM
+           ===================================================================== -->
+      <section class="login-form-panel" aria-label="Sign in form">
+
+        <!-- SIGN IN VIEW CONTAINER -->
+        <div class="form-inner-container" id="signin-card-panel">
+          <div class="form-header-box">
+            <span class="form-super-label">WELCOME BACK</span>
+            <h2 class="form-main-heading">Sign in to Structura</h2>
+            <p class="form-sub-heading">Your traffic outlook is ready when you are.</p>
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div class="structura-alert error" id="signin-error-box" style="display: none;" role="alert">
+            <span id="signin-error-msg">Invalid email address or password.</span>
+          </div>
+
+          <form id="signin-form" novalidate>
+            <!-- Email Input -->
+            <div class="structura-input-group">
+              <label for="signin-email" class="input-label">Email address</label>
+              <input type="email" id="signin-email" class="structura-input" placeholder="you@example.com"
+                value="alex.taylor@structura.io" required autocomplete="email">
+            </div>
+
+            <!-- Password Input with Show/Hide toggle -->
+            <div class="structura-input-group">
+              <div class="label-with-link">
+                <label for="signin-password" class="input-label">Password</label>
+                <button type="button" class="forgot-link-btn" id="btn-forgot-password">Forgot password?</button>
+              </div>
+              <div class="input-with-icon-wrap">
+                <input type="password" id="signin-password" class="structura-input"
+                  placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
+                  value="structura2026" required autocomplete="current-password">
+                <button type="button" class="eye-toggle-btn" id="btn-toggle-pw" aria-label="Toggle password visibility">
+                  <svg id="pw-eye-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Keep me signed in -->
+            <div class="remember-row">
+              <label class="custom-checkbox-wrap">
+                <input type="checkbox" id="signin-remember" checked>
+                <span class="checkbox-text">Keep me signed in</span>
+              </label>
+            </div>
+
+            <!-- Primary Sage Green Sign In Button -->
+            <button type="submit" class="sage-primary-btn" id="btn-submit-signin">
+              <span>Sign in to dashboard</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+
+            <!-- Social / Demo Access Divider -->
+            <div class="or-divider">
+              <span>OR CONTINUE WITH</span>
+            </div>
+
+            <!-- SSO / Demo Buttons -->
+            <div class="sso-buttons-row">
+              <button type="button" class="sso-btn" id="btn-demo-sso-g" title="Simulated Google SSO">
+                <span class="sso-icon">G</span> Google
+              </button>
+              <button type="button" class="sso-btn" id="btn-demo-sso-ms" title="Simulated Microsoft SSO">
+                <span class="sso-icon">&FilledSmallSquare;</span> Microsoft
+              </button>
+            </div>
+
+            <!-- Passkey / One-Click Instant Sign In -->
+            <button type="button" class="passkey-full-btn" id="btn-quick-demo">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>Sign in with a passkey</span>
+            </button>
+
+            <!-- Bottom Registration Toggle -->
+            <div class="form-footer-register">
+              <span>New to Structura?</span>
+              <button type="button" class="register-text-link" id="btn-switch-to-register">Create an account</button>
+            </div>
+          </form>
+
+          <!-- Security note & links -->
+          <footer class="login-bottom-legal">
+            <div class="legal-left">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>Secure access to your traffic insights.</span>
+            </div>
+            <div class="legal-right">
+              <a href="#privacy" id="link-privacy">Privacy</a> &middot; <a href="#help" id="link-help">Help</a>
+            </div>
+          </footer>
+        </div>
+
+        <!-- CREATE ACCOUNT PANEL (IN-PLACE TOGGLE) -->
+        <div class="form-inner-container" id="register-card-panel" style="display: none;">
+          <div class="form-header-box">
+            <span class="form-super-label">CREATE ACCOUNT</span>
+            <h2 class="form-main-heading">Join Structura</h2>
+            <p class="form-sub-heading">Create your personal account — your predictions, settings &amp; datasets stay
+              saved even after logout.</p>
+          </div>
+
+          <div class="structura-alert error" id="register-error-box" style="display: none;" role="alert">
+            <span id="register-error-msg">Unable to create account.</span>
+          </div>
+
+          <form id="register-form" novalidate>
+            <div class="structura-input-group">
+              <label for="reg-name" class="input-label">Full Name</label>
+              <input type="text" id="reg-name" class="structura-input" placeholder="Enter your full name" required
+                autocomplete="name">
+            </div>
+
+            <div class="structura-input-group">
+              <label for="reg-email" class="input-label">Email address</label>
+              <input type="email" id="reg-email" class="structura-input" placeholder="you@example.com" required
+                autocomplete="email">
+            </div>
+
+            <div class="structura-input-group">
+              <label for="reg-password" class="input-label">Password</label>
+              <input type="password" id="reg-password" class="structura-input" placeholder="At least 4 characters"
+                required autocomplete="new-password">
+            </div>
+
+            <button type="submit" class="sage-primary-btn" id="btn-submit-register" style="margin-top: 14px;">
+              <span>Create Account &amp; Go to Dashboard</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+
+            <div class="form-footer-register" style="margin-top: 20px;">
+              <span>Already registered?</span>
+              <button type="button" class="register-text-link" id="btn-switch-to-signin">Sign in to Structura</button>
+            </div>
+          </form>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- MODAL: FORGOT PASSWORD / DEMO NOTICE -->
+  <div class="modal-backdrop" id="forgot-modal" style="display: none;" role="dialog" aria-modal="true"
+    aria-labelledby="modal-rec-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-rec-title">Account Recovery &middot; Local SQLite Auth</h3>
+        <button class="modal-close-btn" id="forgot-modal-close" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 13px; color: #85968a; line-height: 1.6; margin-bottom: 14px;">
+          Accounts and all user data are persisted locally in <strong>SQLite</strong>. Sign in with any account you
+          created, or use the built-in demo operator below.
+        </p>
+        <div class="demo-cred-card">
+          <span class="cred-label">Default Demo Operator:</span>
+          <div>Email: <strong>alex.taylor@structura.io</strong></div>
+          <div>Password: <strong>structura2026</strong></div>
+        </div>
+        <div style="display: flex; justify-content: flex-end; margin-top: 16px;">
+          <button class="sage-primary-btn" id="forgot-modal-ok" style="width: auto; padding: 10px 18px;">
+            Populate Demo Credentials
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Login & Registration Controller backed by persistent SQLite Auth API
+    (function () {
+      const signinForm = document.getElementById('signin-form');
+      const registerForm = document.getElementById('register-form');
+      const btnTogglePw = document.getElementById('btn-toggle-pw');
+      const btnQuickDemo = document.getElementById('btn-quick-demo');
+      const btnDemoSsoG = document.getElementById('btn-demo-sso-g');
+      const btnDemoSsoMs = document.getElementById('btn-demo-sso-ms');
+      const btnSwitchRegister = document.getElementById('btn-switch-to-register');
+      const btnSwitchSignin = document.getElementById('btn-switch-to-signin');
+      const btnForgot = document.getElementById('btn-forgot-password');
+      const forgotModal = document.getElementById('forgot-modal');
+      const forgotClose = document.getElementById('forgot-modal-close');
+      const forgotOk = document.getElementById('forgot-modal-ok');
+
+      // Pre-fill last used email if user previously logged out
+      const lastEmail = localStorage.getItem('structura_last_email');
+      if (lastEmail) {
+        const emailInput = document.getElementById('signin-email');
+        const pwInput = document.getElementById('signin-password');
+        if (emailInput) emailInput.value = lastEmail;
+        if (pwInput && lastEmail !== 'alex.taylor@structura.io') pwInput.value = '';
+      }
+
+      // Password visibility toggle
+      if (btnTogglePw) {
+        btnTogglePw.addEventListener('click', function () {
+          const input = document.getElementById('signin-password');
+          const eye = document.getElementById('pw-eye-icon');
+          if (input.type === 'password') {
+            input.type = 'text';
+            eye.innerHTML = '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line>';
+          } else {
+            input.type = 'password';
+            eye.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>';
+          }
+        });
+      }
+
+      function completeAuthSession(authData) {
+        localStorage.setItem('structura_auth_token', authData.token);
+        localStorage.setItem('structura_user_session', JSON.stringify(authData.user));
+        localStorage.setItem('structura_last_email', authData.user.email);
+        localStorage.removeItem('structura_logged_out');
+        window.location.href = '/dashboard';
+      }
+
+      if (signinForm) {
+        signinForm.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          const email = document.getElementById('signin-email').value.trim();
+          const pw = document.getElementById('signin-password').value;
+          const errBox = document.getElementById('signin-error-box');
+          const errMsg = document.getElementById('signin-error-msg');
+          const submitBtn = document.getElementById('btn-submit-signin');
+
+          if (!email || !email.includes('@')) {
+            errBox.style.display = 'block';
+            errMsg.textContent = 'Please enter a valid email address.';
+            return;
+          }
+          if (!pw || pw.length < 4) {
+            errBox.style.display = 'block';
+            errMsg.textContent = 'Password must be at least 4 characters.';
+            return;
+          }
+
+          errBox.style.display = 'none';
+          const origHtml = submitBtn.innerHTML;
+          submitBtn.innerHTML = '<span>Signing in...</span>';
+          submitBtn.disabled = true;
+
+          try {
+            const resp = await fetch('/api/auth/login', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ email, password: pw })
+            });
+            const data = await resp.json();
+            if (!resp.ok) {
+              errBox.style.display = 'block';
+              errMsg.textContent = data.detail || 'Invalid email or password.';
+              submitBtn.innerHTML = origHtml;
+              submitBtn.disabled = false;
+              return;
+            }
+            completeAuthSession(data);
+          } catch (err) {
+            errBox.style.display = 'block';
+            errMsg.textContent = 'Could not connect to Structura server.';
+            submitBtn.innerHTML = origHtml;
+            submitBtn.disabled = false;
+          }
+        });
+      }
+
+      if (registerForm) {
+        registerForm.addEventListener('submit', async function (e) {
+          e.preventDefault();
+          const name = document.getElementById('reg-name').value.trim();
+          const email = document.getElementById('reg-email').value.trim();
+          const pw = document.getElementById('reg-password').value;
+          const errBox = document.getElementById('register-error-box');
+          const errMsg = document.getElementById('register-error-msg');
+          const submitBtn = document.getElementById('btn-submit-register');
+
+          if (!name || name.length < 2) {
+            errBox.style.display = 'block';
+            errMsg.textContent = 'Please enter your full name.';
+            return;
+          }
+          if (!email || !email.includes('@')) {
+            errBox.style.display = 'block';
+            errMsg.textContent = 'Please enter a valid email address.';
+            return;
+          }
+          if (!pw || pw.length < 4) {
+            errBox.style.display = 'block';
+            errMsg.textContent = 'Password must be at least 4 characters.';
+            return;
+          }
+
+          errBox.style.display = 'none';
+          const origHtml = submitBtn.innerHTML;
+          submitBtn.innerHTML = '<span>Creating account...</span>';
+          submitBtn.disabled = true;
+
+          try {
+            const resp = await fetch('/api/auth/register', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ name, email, password: pw })
+            });
+            const data = await resp.json();
+            if (!resp.ok) {
+              errBox.style.display = 'block';
+              errMsg.textContent = data.detail || 'Registration failed.';
+              submitBtn.innerHTML = origHtml;
+              submitBtn.disabled = false;
+              return;
+            }
+            completeAuthSession(data);
+          } catch (err) {
+            errBox.style.display = 'block';
+            errMsg.textContent = 'Could not connect to Structura server.';
+            submitBtn.innerHTML = origHtml;
+            submitBtn.disabled = false;
+          }
+        });
+      }
+
+      async function quickLogin(email, name) {
+        try {
+          const resp = await fetch('/api/auth/quick-login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, name })
+          });
+          const data = await resp.json();
+          if (resp.ok) completeAuthSession(data);
+        } catch (err) {
+          console.error('Quick login failed:', err);
+        }
+      }
+
+      // Switch register / signin
+      if (btnSwitchRegister && btnSwitchSignin) {
+        btnSwitchRegister.addEventListener('click', function () {
+          document.getElementById('signin-card-panel').style.display = 'none';
+          document.getElementById('register-card-panel').style.display = 'block';
+        });
+        btnSwitchSignin.addEventListener('click', function () {
+          document.getElementById('register-card-panel').style.display = 'none';
+          document.getElementById('signin-card-panel').style.display = 'block';
+        });
+      }
+
+      // Instant Passkey & SSO (backed by SQLite)
+      if (btnQuickDemo) {
+        btnQuickDemo.addEventListener('click', function () {
+          quickLogin('alex.taylor@structura.io', 'Alex Taylor');
+        });
+      }
+      if (btnDemoSsoG) {
+        btnDemoSsoG.addEventListener('click', function () {
+          quickLogin('alex.taylor@gmail.com', 'Alex Taylor (Google)');
+        });
+      }
+      if (btnDemoSsoMs) {
+        btnDemoSsoMs.addEventListener('click', function () {
+          quickLogin('alex.taylor@microsoft.com', 'Alex Taylor (Microsoft)');
+        });
+      }
+
+      // Forgot modal
+      if (btnForgot && forgotModal) {
+        btnForgot.addEventListener('click', function () { forgotModal.style.display = 'flex'; });
+        if (forgotClose) forgotClose.addEventListener('click', function () { forgotModal.style.display = 'none'; });
+        if (forgotOk) {
+          forgotOk.addEventListener('click', function () {
+            document.getElementById('signin-email').value = 'alex.taylor@structura.io';
+            document.getElementById('signin-password').value = 'structura2026';
+            forgotModal.style.display = 'none';
+          });
+        }
+      }
+    })();
+  </script>
+</body>
+
+</html>
